@@ -1,0 +1,14 @@
+﻿  correlcoeff.cpp
+  histcompare.cpp
+  keypointcontrol.cpp
+  main.cpp
+  sumsquaredistance.cpp
+  surfcomp.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\utility(123): warning C4244: 'initializing': conversion from 'const double' to 'int', possible loss of data
+  ..\..\surfexamplev2\surfexamplev2\surfcomp.cpp(83): note: see reference to function template instantiation 'std::pair<std::string,int>::pair<std::string,double,void,0>(const std::pair<std::string,double> &)' being compiled
+  ..\..\surfexamplev2\surfexamplev2\surfcomp.cpp(83): note: see reference to function template instantiation 'std::pair<std::string,int>::pair<std::string,double,void,0>(const std::pair<std::string,double> &)' being compiled
+  Generating code
+  All 173 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  imgprocessing.vcxproj -> c:\dev\imgprocessing\Release\imgprocessing.exe
+  imgprocessing.vcxproj -> c:\dev\imgprocessing\Release\imgprocessing.pdb (Full PDB)
