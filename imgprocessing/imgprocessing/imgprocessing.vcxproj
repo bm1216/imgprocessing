@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="correlcoeff.cpp" />
+    <ClCompile Include="histcompare.cpp" />
+    <ClCompile Include="keypointcontrol.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sumsquaredistance.cpp" />
+    <ClCompile Include="surfcomp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="correlcoeff.h" />
+    <ClInclude Include="histcompare.h" />
+    <ClInclude Include="keypointcontrol.h" />
+    <ClInclude Include="sumsquaredistance.h" />
+    <ClInclude Include="surfcomp.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3FCE7B49-4477-46C1-B5EA-F8A84377E8F2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -151,21 +166,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\correlcoeff.cpp" />
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\histcompare.cpp" />
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\keypointcontrol.cpp" />
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\main.cpp" />
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\sumsquaredistance.cpp" />
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\surfcomp.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\correlcoeff.h" />
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\histcompare.h" />
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\keypointcontrol.h" />
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\sumsquaredistance.h" />
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\surfcomp.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

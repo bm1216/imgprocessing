@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\correlcoeff.cpp">
+    <ClCompile Include="correlcoeff.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\histcompare.cpp">
+    <ClCompile Include="histcompare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\keypointcontrol.cpp">
+    <ClCompile Include="keypointcontrol.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\sumsquaredistance.cpp">
+    <ClCompile Include="sumsquaredistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\surfexamplev2\surfexamplev2\surfcomp.cpp">
+    <ClCompile Include="surfcomp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\correlcoeff.h">
+    <ClInclude Include="correlcoeff.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\histcompare.h">
+    <ClInclude Include="histcompare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\keypointcontrol.h">
+    <ClInclude Include="keypointcontrol.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\sumsquaredistance.h">
+    <ClInclude Include="sumsquaredistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\surfexamplev2\surfexamplev2\surfcomp.h">
+    <ClInclude Include="surfcomp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
