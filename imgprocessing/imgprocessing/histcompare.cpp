@@ -10,6 +10,18 @@
 
 using namespace std;
 using namespace cv;
+
+/*
+	Computes histograms for a given directory of images and allows an image to be compared against them.
+	computegrams must run once before running comparegrams
+	Fast af, histograms can be computed once and read fast and as often as needed.
+	Done using http://docs.opencv.org/2.4/doc/tutorials/imgproc/histograms/histogram_comparison/histogram_comparison.html
+
+	TODO:
+	 - Iterate through the file to find histogram entries rather than looking for images. This prevents the case 
+	   where a new image causes an error if it hasnt been included in the file.
+	    - I want to store it as a red-black tree, not sure if it's possible. Easier to store as a vector instead.
+*/
 histcompare::histcompare()
 {
 }
@@ -23,7 +35,7 @@ int histcompare::comparegrams(string img, string imgpath) {
 
 	cvtColor(img_1, img_1, COLOR_BGR2HSV);
 
-	/// Using 50 bins for hue and 60 for saturation
+	// Using 50 bins for hue and 60 for saturation
 	int h_bins = 50; int s_bins = 60;
 	int histSize[] = { h_bins, s_bins };
 

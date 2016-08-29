@@ -9,6 +9,14 @@
 #include "opencv2/imgproc/imgproc.hpp"
 using namespace std;
 using namespace cv;
+
+/*
+	Loads and compares keypoints between an image and all images and matches them to list images in order of good matches.
+	Not as fast as I thought it would be.
+	Done using the opencv tutorial.
+	Should be merged with keypointcontrol.
+*/
+
 surfcomp::surfcomp()
 {
 }

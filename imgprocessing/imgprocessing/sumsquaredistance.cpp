@@ -11,6 +11,11 @@ using namespace std;
 using namespace cv;
 using namespace std::tr1;
 
+/*
+	Works out the sum of squared difference between an image and all images in a given path.
+	Not very fast.
+*/
+
 sumsquaredistance::sumsquaredistance()
 {
 }

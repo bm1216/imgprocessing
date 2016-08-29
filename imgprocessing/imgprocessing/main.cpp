@@ -17,11 +17,6 @@ using namespace std;
 
 	How the fuck do you store red black trees (map)
 
-	Look at effect of changing number of columns for hue and saturation
-	 - increases file size and execution time but improves accuracy (I think)
-
-	Read histograms from file rather than iterating through images (avoids errors)
-	 - can only be done (that I know of) if theyre saved as a vector of histograms
 */
 
 int main()

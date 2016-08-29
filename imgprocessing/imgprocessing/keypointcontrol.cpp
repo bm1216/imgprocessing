@@ -10,6 +10,12 @@
 using namespace std;
 using namespace cv;
 
+/*
+	Computes SURF descriptors for each image in the given path and stores them in a file.
+	This class should be merged with surfcomp to make it like histcompare.
+	Done using the opencv tutorial (which I cbf finding)
+*/
+
 keypointcontrol::keypointcontrol()
 {
 }

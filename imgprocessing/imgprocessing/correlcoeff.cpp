@@ -9,7 +9,11 @@
 #include "opencv2/imgproc/imgproc.hpp"
 using namespace std;
 using namespace cv;
-using namespace std::tr1;
+/*
+	Works out the normalised cross-correlation coefficient between an image and all images in a given path.
+	Part of the code is taken from a stackoverflow page which I can't remember.
+	Not very fast.
+*/
 
 correlcoeff::correlcoeff()
 {
