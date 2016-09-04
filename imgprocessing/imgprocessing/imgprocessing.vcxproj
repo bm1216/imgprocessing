@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="correlcoeff.cpp" />
     <ClCompile Include="histcompare.cpp" />
+    <ClCompile Include="homographymatch.cpp" />
     <ClCompile Include="keypointcontrol.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sumsquaredistance.cpp" />
@@ -29,6 +30,7 @@
   <ItemGroup>
     <ClInclude Include="correlcoeff.h" />
     <ClInclude Include="histcompare.h" />
+    <ClInclude Include="homographymatch.h" />
     <ClInclude Include="keypointcontrol.h" />
     <ClInclude Include="sumsquaredistance.h" />
     <ClInclude Include="surfcomp.h" />

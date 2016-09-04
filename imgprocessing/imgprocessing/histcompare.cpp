@@ -26,11 +26,11 @@ histcompare::histcompare()
 {
 }
 
-int histcompare::comparegrams(string img, string imgpath) {
+string histcompare::comparegrams(string img, string imgpath) {
 	Mat img_1 = imread(img, 1);
 	if (!img_1.data)
 	{
-		printf(" --(!) Error reading images \n"); return -1;
+		printf(" --(!) Error reading images \n");
 	}
 
 	cvtColor(img_1, img_1, COLOR_BGR2HSV);
@@ -84,12 +84,11 @@ int histcompare::comparegrams(string img, string imgpath) {
 	sort(fn2.begin(), fn2.end(), [](auto &left, auto &right) {
 		return left.second < right.second;
 	});
-
-	for (size_t k = fn2.size() - 5; k < fn2.size(); ++k)
+	for (size_t k = max((int)fn2.size() - 5, 0); k < fn2.size(); ++k)
 		cout << fn2[k].first << " : " << fn2[k].second << endl;
 
 	waitKey(0);
-	return 0;
+	return fn2[fn2.size()-1].first;
 }
 
 void histcompare::computegrams(string path) {

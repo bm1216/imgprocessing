@@ -33,6 +33,9 @@
     <ClCompile Include="surfcomp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="homographymatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="correlcoeff.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="surfcomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="homographymatch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,10 +6,13 @@
 #include "surfcomp.h"
 #include "keypointcontrol.h"
 #include "histcompare.h"
+#include "homographymatch.h"
 #include <ctime>
-using namespace std;
+#include <opencv2/opencv.hpp>
+#include "opencv2/opencv_modules.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 
-//initial time ~ 22.6s
+using namespace std;
 
 /*	TODO:
 	Rather than storing histogram entry for each image, see if you can store them in a data structure (red black tree?)
@@ -23,26 +26,15 @@ int main()
 {
 	clock_t t = clock();
 
-	//keypointcontrol kc;
-	//kc.computekeypoints("../memes/*.png");
+	//histcompare hc;
+	//hc.computegrams("../memes/*.png");
+	//cv::Mat result = cv::imread(hc.comparegrams("../pepe.png", "../memes/*.png"), 1);
 
-	//surfcomp sc;
-	//int result = sc.genfeatures("../sponge2.png", "../memes/*.png");
-
-	//sumsquaredistance ssd; //lower = similar
-	//int result = ssd.calculatessd("../sponge.png", "../memes/*.png");
-
-	//correlcoeff ccf; //higher = similar
-	//int result = ccf.calculateccf("../sponge.jpg", "../images/*.jpg");
-
-	histcompare hc;
-	hc.computegrams("../memes/*.png");
-	//int result = hc.comparegrams("../fish.jpg", "../holiday/*.jpg");
-
+	homographymatch hm;
+	hm.compress("fish2.jpg", "fish.jpg");
+	hm.decompress("fish2.jpg");
 	t = clock() - t;
 	cout << "Time elapsed: " << t / double(CLOCKS_PER_SEC) << "s" << endl;
-
-
 
 	return 0;
 }

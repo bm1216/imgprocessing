@@ -5,7 +5,7 @@ class histcompare
 {
 public:
 	histcompare();
-	int comparegrams(string img, string imgpath);
+	string comparegrams(string img, string imgpath);
 	void computegrams(string imgpath);
 
 };
