@@ -24,6 +24,7 @@
     <ClCompile Include="homographymatch.cpp" />
     <ClCompile Include="keypointcontrol.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="predictimage.cpp" />
     <ClCompile Include="sumsquaredistance.cpp" />
     <ClCompile Include="surfcomp.cpp" />
   </ItemGroup>
@@ -32,6 +33,7 @@
     <ClInclude Include="histcompare.h" />
     <ClInclude Include="homographymatch.h" />
     <ClInclude Include="keypointcontrol.h" />
+    <ClInclude Include="predictimage.h" />
     <ClInclude Include="sumsquaredistance.h" />
     <ClInclude Include="surfcomp.h" />
   </ItemGroup>

@@ -27,9 +27,6 @@ int sumsquaredistance::calculatessd(string img, string imgpath) {
 		printf(" --(!) Error reading images \n"); return -1;
 	}
 
-	Size size(200, 200);
-	Mat img_3;
-	resize(img_1, img_3, size);
 	vector<pair<string, double>> fn2;
 	String path(imgpath); 
 	vector<String> fn;
@@ -40,15 +37,14 @@ int sumsquaredistance::calculatessd(string img, string imgpath) {
 		printf("\r%d/%d", (k + 1), fn.size());
 		img_4 = imread(fn[k]);
 		if (img_4.empty()) continue; //only proceed if sucsessful
-		resize(img_4, img_4, size);
 		double ssd = 0;
 		double ssd1 = 0;
 		double ssd2 = 0;
-		for (int i = 0; i < img_3.cols; i++)
+		for (int i = 0; i < img_1.cols; i++)
 		{
-			for (int j = 0; j < img_3.cols; j++)
+			for (int j = 0; j < img_1.rows; j++)
 			{
-				Vec3b colour1 = img_3.at<Vec3b>(Point(i, j));
+				Vec3b colour1 = img_1.at<Vec3b>(Point(i, j));
 				Vec3b colour2 = img_4.at<Vec3b>(Point(i, j));
 				double diff0 = (colour1[0] - colour2[0]);
 				double diff1 = (colour1[1] - colour2[1]);
@@ -61,7 +57,7 @@ int sumsquaredistance::calculatessd(string img, string imgpath) {
 		pair<string, double> temp = { fn[k], (ssd + ssd1 + ssd2) };
 		fn2.push_back(temp);		
 	}
-	printf("\r");
+	printf(" Done! \n");
 
 	//imshow("Compared image", img_3);
 	

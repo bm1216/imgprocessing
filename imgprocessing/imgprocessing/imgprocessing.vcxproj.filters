@@ -36,6 +36,9 @@
     <ClCompile Include="homographymatch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="predictimage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="correlcoeff.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="homographymatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="predictimage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

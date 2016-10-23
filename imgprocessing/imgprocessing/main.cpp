@@ -7,6 +7,7 @@
 #include "keypointcontrol.h"
 #include "histcompare.h"
 #include "homographymatch.h"
+#include "predictimage.h"
 #include <ctime>
 #include <opencv2/opencv.hpp>
 #include "opencv2/opencv_modules.hpp"
@@ -14,25 +15,53 @@
 
 using namespace std;
 
-/*	TODO:
-	Rather than storing histogram entry for each image, see if you can store them in a data structure (red black tree?)
-	and store that instead (to achieve faster access and potentially lower storage requirement)
-
-	How the fuck do you store red black trees (map)
-
+/*	
+	Relevant classes:
+	 - keypointcontrol - compute & store keypoints
+	 - surfcomp - compare keypoints
+	 - predictimage - create a predicted image and store the image difference
 */
 
 int main()
 {
+	
+	string imgpath;
+	string filepath;
+	cout << "Enter folder path" << endl;
+	cin >> filepath;
+	cout << "Enter image" << endl;
+	cin >> imgpath;
+	
+	/*
+	printf("Loading images \n");
+	Mat added = imread("object0006_view03.png", 1);
+
+	vector<Mat> similar;
+	similar.push_back(imread("object0006_view01.png", 1));
+	similar.push_back(imread("object0006_view02.png", 1));
+	similar.push_back(imread("object0006_view04.png", 1));
+	similar.push_back(imread("object0006_view05.png", 1));
+
+	vector<string> names;
+	names.push_back("object0006_view01.png");
+	names.push_back("object0006_view02.png");
+	names.push_back("object0006_view04.png");
+	names.push_back("object0006_view05.png");
+	*/
+	printf("Starting clock \n");
+	
 	clock_t t = clock();
 
-	//histcompare hc;
-	//hc.computegrams("../memes/*.png");
-	//cv::Mat result = cv::imread(hc.comparegrams("../pepe.png", "../memes/*.png"), 1);
+	//predictimage pi;
+	//pi.predict(added,similar,names);
+	
+	
+	//keypointcontrol kc;
+	//kc.computekeypoints(filepath);
+	surfcomp sc;
+	sc.genfeatures(imgpath,filepath);
+	
 
-	homographymatch hm;
-	hm.compress("fish2.jpg", "fish.jpg");
-	hm.decompress("fish2.jpg");
 	t = clock() - t;
 	cout << "Time elapsed: " << t / double(CLOCKS_PER_SEC) << "s" << endl;
 
