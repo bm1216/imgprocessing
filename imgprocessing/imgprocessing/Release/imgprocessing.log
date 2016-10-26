@@ -1,11 +1,8 @@
-﻿  surfcomp.cpp
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\utility(123): warning C4244: 'initializing': conversion from 'const double' to 'int', possible loss of data
-  surfcomp.cpp(89): note: see reference to function template instantiation 'std::pair<std::string,int>::pair<std::string,double,void,0>(const std::pair<std::string,double> &)' being compiled
-  surfcomp.cpp(89): note: see reference to function template instantiation 'std::pair<std::string,int>::pair<std::string,double,void,0>(const std::pair<std::string,double> &)' being compiled
+﻿  main.cpp
   Generating code
-  2 of 445 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    6 functions had inline decision re-evaluated but remain unchanged
+  223 of 333 functions (67.0%) were compiled, the rest were copied from previous compilation.
+    122 functions were new in current compilation
+    20 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   imgprocessing.vcxproj -> C:\dev\imgprocessing\imgprocessing\Release\imgprocessing.exe
   imgprocessing.vcxproj -> C:\dev\imgprocessing\imgprocessing\Release\imgprocessing.pdb (Full PDB)

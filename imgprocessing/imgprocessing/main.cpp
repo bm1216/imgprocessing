@@ -24,42 +24,42 @@ using namespace std;
 
 int main()
 {
-	
+	/*
 	string imgpath;
 	string filepath;
 	cout << "Enter folder path" << endl;
 	cin >> filepath;
 	cout << "Enter image" << endl;
 	cin >> imgpath;
+	*/
 	
-	/*
 	printf("Loading images \n");
-	Mat added = imread("object0006_view03.png", 1);
+	Mat added = imread("object0022_view03.png", 1);
 
 	vector<Mat> similar;
-	similar.push_back(imread("object0006_view01.png", 1));
-	similar.push_back(imread("object0006_view02.png", 1));
-	similar.push_back(imread("object0006_view04.png", 1));
-	similar.push_back(imread("object0006_view05.png", 1));
+	similar.push_back(imread("object0022_view01.png", 1));
+	similar.push_back(imread("object0022_view02.png", 1));
+	similar.push_back(imread("object0022_view04.png", 1));
+	similar.push_back(imread("object0022_view05.png", 1));
 
 	vector<string> names;
 	names.push_back("object0006_view01.png");
 	names.push_back("object0006_view02.png");
 	names.push_back("object0006_view04.png");
 	names.push_back("object0006_view05.png");
-	*/
+	
 	printf("Starting clock \n");
 	
 	clock_t t = clock();
 
-	//predictimage pi;
-	//pi.predict(added,similar,names);
+	predictimage pi;
+	pi.predict(added,similar,names);
 	
 	
 	//keypointcontrol kc;
 	//kc.computekeypoints(filepath);
-	surfcomp sc;
-	sc.genfeatures(imgpath,filepath);
+	//surfcomp sc;
+	//sc.genfeatures(imgpath,filepath);
 	
 
 	t = clock() - t;
